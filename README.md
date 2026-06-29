@@ -1,2 +1,2 @@
 # syednazli1025.github.io
-My Home Lab Diaries!
+Cybersecurity Home Lab Portfolio
