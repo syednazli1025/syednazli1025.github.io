@@ -1,9 +1,38 @@
 # syednazli1025.github.io
-Cybersecurity Home Lab Portfolio
+Following my Cybersecurity Home Lab Adventures!
 
-Creating the Virtual Machines using VMware Workstation Pro
-During this lab session, I successfully built the foundation of a virtual cybersecurity environment using VMware Workstation Pro. I completed the installation and configuration of both a Windows 10 virtual machine and a Kali Linux virtual machine, verified that both operating systems booted correctly, and created a clean snapshot of the Kali installation for future recovery. To prevent issues with VMware losing track of virtual machines, I moved both VMs from a OneDrive-synced directory to a local folder (C:\VMS) and re-imported them into VMware. This ensured the virtual machines would remain accessible and eliminated synchronization problems caused by cloud storage. I also configured the virtual hardware, verified disk storage settings, and confirmed that all VM files were stored locally on the host system.
+1. VM ENVIRONMENT SETUP
 
-The second phase of the lab focused on configuring virtual networking and troubleshooting connectivity. I configured VMware’s Host-only network (VMnet1) to create an isolated lab environment, assigned both Windows and Kali to the same virtual network, and verified that they received IP addresses within the same subnet (192.168.184.0/24). During testing, I encountered several networking issues, including Windows initially receiving an APIPA address (169.254.x.x) and later connecting to the incorrect NAT network. After troubleshooting the Virtual Network Editor, correcting the network adapter configuration, and restarting the virtual machines, both systems successfully obtained the correct IP addresses. Connectivity was validated using the ipconfig, ip a, and ping commands. Although Windows Firewall initially blocked inbound ICMP requests from Kali, enabling the appropriate firewall rule allowed successful two-way communication between the virtual machines, resulting in a fully functional isolated cybersecurity lab ready for future exercises involving Nmap, Wireshark, Zeek, Sysmon, and SOC analysis.
+Objective:
+Build an isolated cybersecurity practice environment using virtual machines to safely perform networking, reconnaissance, and security testing.
 
+* Configured **VMware Workstation Pro 17** and created a Windows 10 and Kali Linux virtual machine environment.
+* Configured VM storage, virtual hardware, VMware Tools, and network adapter settings.
+* Established an isolated **host-only virtual network (VMnet1)** for communication between the Windows and Kali VMs.
+* Troubleshot VM connectivity and configuration issues, including missing VM files and virtual network adapter settings.
+* Verified communication between virtual machines using basic network connectivity tests.
+
+
+2. VM NETWORK CONFIGURATION AND TROUBLESHOOTING
+
+Objective:
+Configure and troubleshoot a private virtual network to enable controlled communication between Windows and Kali Linux systems.
+
+* Configured a host-only VMware network using the **192.168.184.0/24** subnet.
+* Identified and verified the IP addresses assigned to the Windows and Kali virtual machines.
+* Troubleshot connectivity issues involving incorrect IP addressing and unreachable hosts.
+* Used **ping/ICMP testing** to verify communication between virtual machines.
+* Investigated Windows firewall/network configuration when connectivity tests initially failed.
+
+
+3. NETWORK DISCOVERY AND PING SWEEP
+
+Objective:
+Identify active hosts on a network by performing network discovery from Kali Linux.
+
+* Performed a **ping sweep** against the isolated virtual network to identify active systems.
+* Used IP addressing information to distinguish between the Kali Linux and Windows hosts.
+* Analyzed ICMP responses to determine host availability.
+* Used network discovery results as a starting point for subsequent reconnaissance and port-scanning activities.
+* Practiced performing reconnaissance within an isolated lab environment.
 
