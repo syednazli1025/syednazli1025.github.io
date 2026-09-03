@@ -1,5 +1,5 @@
 # syednazli1025.github.io
-Following my Cybersecurity Home Lab Adventures!
+**Following my Cybersecurity Home Lab Adventures!**
 
 1. VM ENVIRONMENT SETUP
 
