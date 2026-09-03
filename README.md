@@ -30,9 +30,48 @@ Configure and troubleshoot a private virtual network to enable controlled commun
 Objective:
 Identify active hosts on a network by performing network discovery from Kali Linux.
 
-* Performed a **ping sweep** against the isolated virtual network to identify active systems.
+* Performed a ping sweep against the isolated virtual network to identify active systems.
 * Used IP addressing information to distinguish between the Kali Linux and Windows hosts.
 * Analyzed ICMP responses to determine host availability.
 * Used network discovery results as a starting point for subsequent reconnaissance and port-scanning activities.
 * Practiced performing reconnaissance within an isolated lab environment.
 
+
+4. NMAP
+Objective:
+Use Nmap to identify accessible network services and open ports on a target system.
+Performed Nmap scans from Kali Linux against the Windows virtual machine.
+Identified open TCP ports, including port 445 associated with Windows networking.
+Practiced different Nmap scanning techniques, including TCP connection/ACK-based scanning.
+Interpreted scan results to determine which network services were potentially accessible.
+Used discovered ports to guide additional service enumeration.
+
+
+5. SERVICE ENUMERATION & BANNER GRABBING
+Objective:
+Identify services running on discovered open ports and collect information about the target system.
+Developed and executed a Python-based port scanner to identify open TCP ports.
+Enhanced the scanner to associate discovered ports with their corresponding service names.
+Practiced connecting to accessible services to retrieve service banners.
+Used banner information to better understand the software/services exposed by the target.
+Compared automated scanning results with manual enumeration techniques.
+
+
+6. NETCAT
+Objective:
+Use command-line networking tools to manually interact with services and understand TCP connections.
+Used Netcat (nc) to establish TCP connections to services within the lab environment.
+Practiced manually connecting to discovered ports after performing Nmap reconnaissance.
+Observed how services respond to incoming connections.
+Used command-line networking techniques to complement automated scanning.
+Compared manual enumeration with information obtained through Nmap and the Python scanner.
+
+
+7. WIRESHARK
+Objective:
+Capture and analyze network traffic to understand how network communication appears at the packet level.
+Captured traffic generated between the Windows and Kali virtual machines using Wireshark.
+Applied ICMP display filters to isolate ping traffic.
+Examined packet-level information associated with network connectivity tests.
+Identified source and destination IP addresses within captured packets.
+Connected observable packet activity to commands executed from the terminal.
