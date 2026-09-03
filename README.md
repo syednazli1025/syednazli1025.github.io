@@ -8,7 +8,7 @@ Build an isolated cybersecurity practice environment using virtual machines to s
 
 • Configured VMware Workstation Pro 17 and created a Windows 10 and Kali Linux virtual machine environment.
 • Configured VM storage, virtual hardware, VMware Tools, and network adapter settings.
-• Established an isolated **host-only virtual network (VMnet1)** for communication between the Windows and Kali VMs.
+• Established an isolated host-only virtual network (VMnet1)** for communication between the Windows and Kali VMs.
 • Troubleshot VM connectivity and configuration issues, including missing VM files and virtual network adapter settings.
 • Verified communication between virtual machines using basic network connectivity tests.
 
