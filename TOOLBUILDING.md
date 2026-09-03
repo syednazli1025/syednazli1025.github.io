@@ -1,3 +1,4 @@
+# syednazli1025.github.io
 **Building a Python Port Scanner!**
 
 • Developed a Python-based TCP port scanner using the `socket` library to automatically test ports 1–1024 on a specified target IP address.
