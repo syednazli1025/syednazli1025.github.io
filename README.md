@@ -83,3 +83,15 @@ Capture and analyze network traffic to understand how network communication appe
 • Examined packet-level information associated with network connectivity tests.
 • Identified source and destination IP addresses within captured packets.
 • Connected observable packet activity to commands executed from the terminal.
+
+10. HOME SIEM LAB WITH SPLUNK
+
+Objective:
+To build a virtualized SIEM environment using Splunk to collect, monitor, and analyze Windows security event logs while developing hands-on experience in security monitoring and threat detection.
+
+• Deploying Splunk Enterprise on an Ubuntu Server VM.
+• Configuring VMware virtual networking between multiple VMs.
+• Installing and configuring Splunk Universal Forwarder on Windows.
+• Establishing log forwarding to a centralized SIEM.
+• Collecting and analyzing Windows security events.
+• Exploring authentication activity and potential security indicators.
